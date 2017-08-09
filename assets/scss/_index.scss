@@ -12,7 +12,24 @@
   color: $blanco;
   margin-top: 0;
 }
-.iniciarSesion{
+.iniciarSesionEstilo{
   background-color: $Azul-medio;
   text-transform: capitalize;
+  color: $blanco;
+}
+.opcionesInicio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  button{
+    color: $blanco;
+    margin: 1em;
+  }
+}
+.titulos{
+  color: $Gris-medio;
+}
+.logoInicioSesion{
+  margin-top: 5em;
 }
