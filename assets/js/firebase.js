@@ -18,6 +18,7 @@ var logGoogle = function (){
   var user = result.user;
   localStorage.setItem("email",user.email);
   localStorage.setItem("displayName",user.displayName);
+  location.href = "../views/agendaDiaria.html";
   // ...
   }).catch(function(error) {
     // Handle Errors here.
