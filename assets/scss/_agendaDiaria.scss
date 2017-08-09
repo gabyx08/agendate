@@ -12,14 +12,17 @@
 }
 
 //Color fuente
-
 .fuente-Az-med{
 	color: $Azul-medio;
 }
 
-// MARGENES
+// MARGENES & PADINGS
 .p-3{
 	padding: 3%;
+}
+
+.pb-9{
+	padding-bottom: 9%;
 }
 
 .mt-5{
@@ -37,4 +40,10 @@
 // Clases de materialize personalizadas
 .card-panel{
 	padding: 0 2%;
+}
+
+//
+
+.ocultar{
+	display: none;
 }
