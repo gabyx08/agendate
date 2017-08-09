@@ -1,0 +1,18 @@
+@import "variables";
+
+.navlogo{
+  padding-top: 0.5em;
+}
+.calendario{
+  background-color: $Gris-claro;
+  height: 50vh;
+}
+.contenedormes{
+  background-color: $Azul-medio;
+  color: $blanco;
+  margin-top: 0;
+}
+.iniciarSesion{
+  background-color: $Azul-medio;
+  text-transform: capitalize;
+}
