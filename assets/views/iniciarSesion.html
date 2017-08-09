@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Iniciar Sesion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../src/dist/sweetalert.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Inicia Sesión</title>
   </head>
   <body>
     <div class="container">
-       <div class="row navlogo">
+       <div class="row logoInicioSesion center">
            <div class="col s12">
              <img src="https://dummyimage.com/100x100" alt="" class="responsive-img brand-logo center">
-           </div>         
+           </div>
        </div>
+       <section class="container">
+         <div class="row center">
+           <h3 class="titulos">Inicia Sesion</h3>
+         </div>
+         <div class="opcionesInicio ">
+           <button  type="submit" id="GoogleAuth" class="waves-effect iniciarSesionEstilo btn col s12 ">Google</button>
+           <button type="submit" id="OutlookAuth" class="waves-effect iniciarSesionEstilo btn col s12 "> Outlook</button>
+         </div>
+       </section>
     </div>
+    <script src="../js/jquery.min.js" charset="utf-8"></script>
+    <script src="../js/materialize.min.js" charset="utf-8"></script>
+    <script src="../src/dist/sweetalert.min.js" charset="utf-8"></script>
+    <script src="../js/app.js" charset="utf-8"></script>
   </body>
 </html>

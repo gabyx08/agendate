@@ -10,8 +10,24 @@
   color: #fff;
   margin-top: 0; }
 
-.iniciarSesion {
+.iniciarSesionEstilo {
   background-color: #00acc1;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  color: #fff; }
+
+.opcionesInicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .opcionesInicio button {
+    color: #fff;
+    margin: 1em; }
+
+.titulos {
+  color: #95989a; }
+
+.logoInicioSesion {
+  margin-top: 5em; }
 
 /*# sourceMappingURL=main.css.map */
