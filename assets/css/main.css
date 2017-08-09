@@ -1,3 +1,29 @@
+.fondo-Az-med {
+  background-color: #00acc1; }
+
+.fondo-Az-cl {
+  background-color: #acebf2; }
+
+.fondo-Gr-cl {
+  background-color: #c3c4c4; }
+
+.fuente-Az-med {
+  color: #00acc1; }
+
+.p-3 {
+  padding: 3%; }
+
+.mt-5 {
+  margin-top: 5%; }
+
+.alinear-v {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.card-panel {
+  padding: 0 2%; }
+
 .navlogo {
   padding-top: 0.5em; }
 
@@ -29,5 +55,6 @@
 
 .logoInicioSesion {
   margin-top: 5em; }
+
 
 /*# sourceMappingURL=main.css.map */
