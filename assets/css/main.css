@@ -13,6 +13,9 @@
 .p-3 {
   padding: 3%; }
 
+.pb-9 {
+  padding-bottom: 9%; }
+
 .mt-5 {
   margin-top: 5%; }
 
@@ -23,6 +26,9 @@
 
 .card-panel {
   padding: 0 2%; }
+
+.ocultar {
+  display: none; }
 
 .navlogo {
   padding-top: 0.5em; }
@@ -72,5 +78,4 @@
 
 .letra--grisMedio {
   color: #95989a; }
-
 /*# sourceMappingURL=main.css.map */
