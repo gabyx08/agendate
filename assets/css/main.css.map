@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,aAAa;EACZ,gBAAgB,ECDJ,OAAc;;ADI3B,YAAY;EACX,gBAAgB,ECJJ,OAAgB;;ADO7B,YAAY;EACX,gBAAgB,ECJJ,OAAgB;;ADS7B,cAAc;EACb,KAAK,ECfO,OAAc;;ADmB3B,IAAI;EACH,OAAO,EAAE,EAAE;;AAGZ,KAAK;EACJ,UAAU,EAAE,EAAE;;AAIf,UAAU;EACT,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EAEnB,WAAW,EAAE,MAAM;;AAIpB,WAAW;EACV,OAAO,EAAE,IAAI",
-"sources": ["../scss/_agendaDiaria.scss","../scss/_variables.scss"],
-"names": [],
-"file": "main.css"
-}
