@@ -1,0 +1,40 @@
+// Fondos
+.fondo-Az-med{
+	background-color: $Azul-medio;
+}
+
+.fondo-Az-cl{
+	background-color: $Azul-claro;
+}
+
+.fondo-Gr-cl{
+	background-color: $Gris-claro
+}
+
+//Color fuente
+
+.fuente-Az-med{
+	color: $Azul-medio;
+}
+
+// MARGENES
+.p-3{
+	padding: 3%;
+}
+
+.mt-5{
+	margin-top: 5%;
+}
+
+// Alineación vertical
+.alinear-v{
+	display: flex;
+	flex-direction: row;
+	// justify-content: center;
+	align-items: center;
+}
+
+// Clases de materialize personalizadas
+.card-panel{
+	padding: 0 2%;
+}

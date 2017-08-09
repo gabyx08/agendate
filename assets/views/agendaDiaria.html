@@ -4,16 +4,65 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Lekton" rel="stylesheet"/>
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="../css/main.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Agenda diaria</title>
 </head>
 <body>
-	<header class="">
-
+	<header class="row alinear-v">
+		<img src="https://dummyimage.com/100x100" alt="logo" class="responsive-img mt-5 offset-s1 col s3">
+		<button class="waves-effect waves-light btn offset-s3 col s4 fondo-Az-med iniciarSesionEstilo">Iniciar Sesión</button>
 	</header>
-
+	<!-- Vista Eventos -->
+	<section class="mes fondo-Az-med">
+		<h3 class="white-text p-3 center"> MES </h3>
+	</section>
+	<!-- Tarjetas eventos -->
+	<section class="eventos-Diarios container">
+		<h4 class="row"> <strong>Día 0</strong></h4>
+		<!-- Tarjeta evento -->
+		<section class="card-panel grey lighten-4">
+			<div class="row">
+				<div class="col s8">
+					<h5> Titulo Evento </h5>
+					<p> Nombre Ponente</p>
+					<div class="container">
+						<div class="row">
+							<span class="center tag col s5 chip fondo-Az-cl"> Lugar </span>
+							<a href="#" class="center offset-s1 col s5"> ver más</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s4 fondo-Gr-cl">
+					<p class="center white-text fondo-Az-med p-3"> Agendado</p>
+					<h4 class="center"> 00:00<br> a <br>00:00 </h4>
+				</div>
+			</div>
+		</section>
+		<!-- Fin tarjeta evento -->
+		<!-- Tarjeta evento -->
+		<section class="card-panel grey lighten-4">
+			<div class="row">
+				<div class="col s8">
+					<h5> Titulo Evento </h5>
+					<p> Nombre Ponente</p>
+					<div class="container">
+						<div class="row">
+							<span class="center tag col s5 chip"> Lugar </span>
+							<a href="#" class="center offset-s1 col s5"> ver más</a>
+						</div>
+					</div>
+				</div>
+				<div class="center col s4 grey lighten-2">
+					<p class="center chip fuente-Az-med"> Agendado</p>
+					<h4 class="center"> 00:00<br> a <br>00:00 </h4>
+				</div>
+			</div>
+		</section>
+		<!-- Fin tarjeta evento -->
+	</section>
 	<!-- SCRIPTS-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="../js/materialize.min.js"></script>
