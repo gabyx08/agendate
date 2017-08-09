@@ -1,0 +1,17 @@
+.navlogo {
+  padding-top: 0.5em; }
+
+.calendario {
+  background-color: #c3c4c4;
+  height: 50vh; }
+
+.contenedormes {
+  background-color: #00acc1;
+  color: #fff;
+  margin-top: 0; }
+
+.iniciarSesion {
+  background-color: #00acc1;
+  text-transform: capitalize; }
+
+/*# sourceMappingURL=main.css.map */
