@@ -1,3 +1,61 @@
+.fondo-Az-med {
+  background-color: #00acc1; }
+
+.fondo-Az-cl {
+  background-color: #acebf2; }
+
+.fondo-Gr-cl {
+  background-color: #c3c4c4; }
+
+.fuente-Az-med {
+  color: #00acc1; }
+
+.p-3 {
+  padding: 3%; }
+
+.mt-5 {
+  margin-top: 5%; }
+
+.alinear-v {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.card-panel {
+  padding: 0 2%; }
+
+.navlogo {
+  padding-top: 0.5em; }
+
+.calendario {
+  background-color: #c3c4c4;
+  height: 50vh; }
+
+.contenedormes {
+  background-color: #00acc1;
+  color: #fff;
+  margin-top: 0; }
+
+.iniciarSesionEstilo {
+  background-color: #00acc1;
+  text-transform: capitalize;
+  color: #fff; }
+
+.opcionesInicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .opcionesInicio button {
+    color: #fff;
+    margin: 1em; }
+
+.titulos {
+  color: #95989a; }
+
+.logoInicioSesion {
+  margin-top: 5em; }
+
 .nav-atras {
   background: #fff;
   box-shadow: none; }
