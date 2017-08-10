@@ -9,7 +9,8 @@
       "dia" : 12,
       "mes" : "agosto",
       "año" : 2017,
-      "descripcion" : "Un festival dedicado a las hamburguesas con opciones para todos, con las versiones vegetarianas y veganas. Encontrarás papas, malteadas, salchichas, food trucks, moto foods, parrilleros independientes, cervezas artesanales y postres que van desde wafles, helados, café y repostería francesa."
+      "descripcion" : "Un festival dedicado a las hamburguesas con opciones para todos, con las versiones vegetarianas y veganas. Encontrarás papas, malteadas, salchichas, food trucks, moto foods, parrilleros independientes, cervezas artesanales y postres que van desde wafles, helados, café y repostería francesa.",
+      "etiqueta" : "Col. Roma"
     },
     "evento2" : {
       "evento" : "evento2",
@@ -20,7 +21,8 @@
       "dia" : 19,
       "mes" : "agosto",
       "año" : 2017,
-      "descripcion" : "El festival gastronómico sabores de Tesquisquiapan tendrá la posibilidad de contratar un vuelo en globo , zona de food trucks con amplia variedad de gastronomía, zona de mercado artesanal, música en vivo con Dj, cata de vino, talleres y zona de juegos para los niños."
+      "descripcion" : "El festival gastronómico sabores de Tesquisquiapan tendrá la posibilidad de contratar un vuelo en globo , zona de food trucks con amplia variedad de gastronomía, zona de mercado artesanal, música en vivo con Dj, cata de vino, talleres y zona de juegos para los niños.",
+      "etiqueta" : "Tequisquiapan"
     },
     "evento3" : {
       "evento" : "evento3",
@@ -31,7 +33,8 @@
       "dia" : 17,
       "mes" : "agosto",
       "año" : 2017,
-      "descripcion" : "Encontrarás gran variedad de distribuidores de mezcal de distintas regiones, chocolate artesanales de otros estados, quesos nacionales e importados, así como productores de vino."
+      "descripcion" : "Encontrarás gran variedad de distribuidores de mezcal de distintas regiones, chocolate artesanales de otros estados, quesos nacionales e importados, así como productores de vino.",
+      "etiqueta" : "Coyoacán"
     },
     "evento4" : {
       "evento" : "evento4",
@@ -42,7 +45,8 @@
       "dia" : 1,
       "mes" : "septiembre",
       "año" : 2017,
-      "descripcion" : "Es un evento que ofrece la degustación de más de 100 micheladas diferentes"
+      "descripcion" : "Es un evento que ofrece la degustación de más de 100 micheladas diferentes",
+      "etiqueta" : "Cuautla"
     },
     "evento5" : {
       "evento" : "evento5",
@@ -53,7 +57,8 @@
       "dia" : 26,
       "mes" : "agosto",
       "año" : 2017,
-      "descripcion" : "Encontrarás muchas ofertas de estas bebidas, hallarás talleres, conferencias, food trucks y muchas artículos gourmet."
+      "descripcion" : "Encontrarás muchas ofertas de estas bebidas, hallarás talleres, conferencias, food trucks y muchas artículos gourmet.",
+      "etiqueta" : "Chapultepec"
     }
   }
 }
