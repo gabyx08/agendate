@@ -1,8 +1,8 @@
 var arregloDatos = [];
 
-var arregloAgendados = ["evento1","evento5"];
+var arregloAgendados = ["evento2"];
 
-var plantillaCard= `<section id="_id_"><h5>_dia_</h5>
+var plantillaCard= `<section id="_id_"><h5> Día _dia_</h5>
 		<div class="card-panel grey lighten-4">
 			<div class="row">
 				<div class="col s8">
@@ -80,8 +80,10 @@ var mostrarEventos= function (eventos) {
       .replace("Nombre_Ponente", evento[0].ponente)
 	  .replace("Lugar", evento[0].etiqueta)
       .replace("_horario_", evento[0].horario);
+      $(".mes").text(evento[0].mes);
 	});
 	$(".eventos-usuario").html(plantillaFinal);
+
 };
 
 // al dar click en ver mas se obtiene el id de la tarjeta para obtener los datos de eventos y mostrarlos en el modal
