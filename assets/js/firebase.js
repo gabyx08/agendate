@@ -8,6 +8,19 @@ var config = {
   messagingSenderId: "887639027482"
 };
 firebase.initializeApp(config);
+var reubicar = function (){
+  if(document.referrer == "https://memecast.github.io/"){
+    location.href = "https://memecast.github.io/agendate/assets/views/agendaUsuario.html";
+  }else if( document.referrer == "https://memecast.github.io/agendate/assets/views/agendaDiaria.html"){
+    location.href = document.referrer;
+    $("#btn-InicioSesion").addClass("disabled");
+  }
+}
+  // }else if (document.referrer == "https://memecast.github.io/agendate/assets/views/agendaDiaria.html") {
+  //   location.href = document.referrer;
+  // }else if (document.referrer == "http://localhost:5000/assets/views/agendaDiaria.html") {
+  //   location.href = document.referrer;
+  // }
 
 var logGoogle = function (){
   var provider = new firebase.auth.GoogleAuthProvider();
@@ -19,7 +32,8 @@ var logGoogle = function (){
   // localStorage.setItem("email",user.email);
   // localStorage.setItem("displayName",user.displayName);
   // if(location.origin == "https://localhost:5000")
-  location.href = "../views/agendaDiaria.html";
+  console.log(document.referrer);
+  reubicar();
   // ...
   }).catch(function(error) {
     // Handle Errors here.
