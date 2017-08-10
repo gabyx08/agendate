@@ -28,9 +28,19 @@ var peticionApi = function(){
 
 }
 var mostrarAgendaDia = function(){
+
     location.href="/agendate/assets/views/agendaDiaria.html";
 
 }
+var Evento = function (titulo,ponente,horario,lugar,descripcion){
+  this.titulo : titulo,
+  this.ponente: ponente,
+  this.horario: horario,
+  this.lugar:   lugar,
+  this.descripcion: descripcion,
+  this.agregado: 'false';
+}
+var arregloObjetos=[{}];
 var agregarData = function (arreglo){
 
   for(var i = 0 ; i < arreglo.length ;i++){
@@ -42,12 +52,15 @@ var agregarData = function (arreglo){
            $(this).addClass('fecha-evento');
            $(this).data('evento',arreglo[i].evento);
           //  console.log($(this).data('evento'));
-           $(this).data('titulo',arreglo[i].nombre);
-           $(this).data('ponente',arreglo[i].ponente);
-           $(this).data('horario',arreglo[i].horario);
-           $(this).data('lugar',arreglo[i].lugar);
-           $(this).data('descripcion',arreglo[i].descripcion);
-           $(this).click(mostrarAgendaDia);
+           var titulo = $(this).data('titulo',arreglo[i].nombre);
+           var ponente = $(this).data('ponente',arreglo[i].ponente);
+           var horario = $(this).data('horario',arreglo[i].horario);
+           var lugar = $(this).data('lugar',arreglo[i].lugar);
+           var descripcion = $(this).data('descripcion',arreglo[i].descripcion);
+          var nuevoObjeto = new Evento(titulo,ponente,horario,lugar,descripcion);
+          arregloObjetos.push(nuevoObjeto);
+          console.log(arregloObjetos);
+          $(this).click(mostrarAgendaDia);
           //  $(this).click(mostrarAgendaDia);
          }
     });
