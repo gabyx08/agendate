@@ -1,25 +1,25 @@
 
 var peticionApi = function(){
-  fetch("/agendate/assets/api/eventos.json").then(function(respuesta){
-    return respuesta.json();
-}).then(function(datos){
-    //console.log(datos.Sheet1);
-    var respuestaApiEventos = datos;
-    for (var evento in respuestaApiEventos) {
-        // skip loop if the property is from prototype
-        if (!respuestaApiEventos.hasOwnProperty(evento)) continue;
+    fetch("/agendate/assets/api/eventos.json").then(function(respuesta){
+      return respuesta.json();
+  }).then(function(datos){
+      //console.log(datos.Sheet1);
+      var respuestaApiEventos = datos;
+      for (var evento in respuestaApiEventos) {
+          // skip loop if the property is from prototype
+          if (!respuestaApiEventos.hasOwnProperty(evento)) continue;
 
-        var obj = respuestaApiEventos[evento];
-        for (var prop in obj) {
-            // skip loop if the property is from prototype
-            // if(!obj.hasOwnProperty(prop)) continue;
+          var obj = respuestaApiEventos[evento];
+          for (var prop in obj) {
+              // skip loop if the property is from prototype
+              // if(!obj.hasOwnProperty(prop)) continue;
 
-            // your code
-            arregloDatos.push(obj[prop]);
+              // your code
+              arregloDatos.push(obj[prop]);
 
 
-        }
-    }
+          }
+      }
     //console.log(arregloDatos);
     //console.log(arregloDatos[0].nombre)
     //console.log(typeof arregloDatos);
@@ -27,7 +27,10 @@ var peticionApi = function(){
 });
 
 }
+var mostrarAgendaDia = function(){
+    location.href="../views/agendaDiaria.html";
 
+}
 var agregarData = function (arreglo){
 
   for(var i = 0 ; i < arreglo.length ;i++){
