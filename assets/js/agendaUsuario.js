@@ -69,15 +69,13 @@ var mostrarEventos= function (eventos) {
 	$(".eventos-usuario").html(plantillaFinal);
 };
 
-function hola(evento){
-	console.log(evento)
+var obtenerId = function(){
 	var id = this.parentElement.dataset.id;
-	console.log(id)
 	filtrarInfoModal(id);
 }
 
-function filtrarInfoModal(id){
-			var eventoFiltrado = arregloDatos.filter(function (evento) {
+var filtrarInfoModal = function(id){
+		var eventoFiltrado = arregloDatos.filter(function (evento) {
 		return evento.evento.indexOf(id) >= 0;
 	});
 	 mostrarModal(eventoFiltrado)
@@ -90,18 +88,19 @@ var mostrarModal = function(eventoFiltrado){
 		.replace("_evento_", eventoFiltrado.evento)
 		.replace("_dia_", eventoFiltrado.dia)
 		.replace("Titulo_Evento", eventoFiltrado.nombre)
-      .replace("Nombre_Ponente", eventoFiltrado.ponente)
-	  .replace("_lugar_", eventoFiltrado.lugar)
-      .replace("_horario_", eventoFiltrado.horario)
-      .replace("_descripcion_", eventoFiltrado.descripcion);
+	    .replace("Nombre_Ponente", eventoFiltrado.ponente)
+		.replace("_lugar_", eventoFiltrado.lugar)
+	    .replace("_horario_", eventoFiltrado.horario)
+	    .replace("_descripcion_", eventoFiltrado.descripcion);
 
 	});
 	$("#infoEvento").html(modalFinal);
-	     $('.modal').modal();
+	     
 
 }
 
 $(document).ready(function(){
-    $(document).on("click", ".mas", hola);
+    $(document).on("click", ".mas", obtenerId);
+    $('.modal').modal();
     infoEventos();
   });
