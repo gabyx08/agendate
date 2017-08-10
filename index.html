@@ -1,38 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/src/dist/sweetalert.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Agendate</title>
-  </head>
-  <body>
-    <!--Modal de Inicio de sesion-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./assets/css/materialize.min.css">
+		<link rel="stylesheet" href="./assets/src/dist/sweetalert.css">
+		<link rel="stylesheet" href="./assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/calendarioUsuario.css">
+		<title>Agendate</title>
+	</head>
+	<body>
+		<!--Modal de Inicio de sesion-->
 
-    <!--Fin de modal inicio de sesion-->
-    <!-- Modal descripcion de evento-->
+		<!--Fin de modal inicio de sesion-->
+		<!-- Modal descripcion de evento-->
 
-    <!-- fin de modal descripcion de evento -->
-    <div class="container center">
-      <!--Navegacion  -->
-        <div class="row center navlogo">
-          <div class="col s12">
-            <img src="https://dummyimage.com/100x100" alt="" class="responsive-img brand-logo center">
-          </div>
-        </div>
-      <!-- Fin de Navegacion -->
-      <!--Inicio de seccion de  calendario-->
-        <div class="row calendario center">
-          <h3 class="col s12 contenedormes p-mes flow-text">Mes</h3>
-        </div>
+		<!-- fin de modal descripcion de evento -->
+		<div class="container center">
+			<!--Navegacion  -->
+			<div class="row center navlogo">
+				<div class="col s4 offset-s4">
+					<img src="assets/src/img/agenDate1.svg" alt="" class="responsive-img brand-logo center">
+				</div>
+			</div>
+			<!-- Fin de Navegacion -->
+			<!--Inicio de seccion de  calendario-->
+			<section class="row">
 
-      <!-- fin seccion de calendario-->
-      <a class="waves-effect iniciarSesionEstilo btn" href="./assets/views/iniciarSesion.html">iniciar sesion</a>
-    </div>
-    <script src="../assets/js/jquery.min.js" charset="utf-8"></script>
-    <script src="../assets/js/materialize.min.js" charset="utf-8"></script>
-    <script src="../assets/src/dist/sweetalert.min.js" charset="utf-8"></script>
-  </body>
+				<h5 class="center titulo-calendario p-3">Agosto </h5>
+
+				<table class="row center">
+					<tr class="row">
+						<th class="diaSemana">Lunes</th>
+						<th class="diaSemana">Martes</th>
+						<th class="diaSemana">Miercoles</th>
+						<th class="diaSemana">Jueves</th>
+						<th class="diaSemana">Viernes</th>
+						<th class="diaSemana">Sábado</th>
+						<th class="diaSemana">Domingo</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="fechaDia" data-dia='1'>1</td>
+						<td class="fechaDia" data-dia='2'>2</td>
+						<td class="fechaDia" data-dia='3'>3</td>
+						<td class="fechaDia" data-dia='4'>4</td>
+						<td class="fechaDia" data-dia='5'>5</td>
+						<td class="fechaDia" data-dia='6'>6</td>
+					</tr>
+					<tr>
+						<td class="fechaDia" data-dia='7'>7</td>
+						<td class="fechaDia" data-dia='8'>8</td>
+						<td class="fechaDia" data-dia='9'>9</td>
+						<td class="fechaDia" data-dia='10'>10</td>
+						<td class="fechaDia" data-dia='11'>11</td>
+						<td class="fechaDia" data-dia="12">12</td>
+						<td class="fechaDia" data-dia='13'>13</td>
+					</tr>
+					<tr>
+						<td class="fechaDia" data-dia='14'>14</td>
+						<td class="fechaDia" data-dia='15'>15</td>
+						<td class="fechaDia" data-dia='16'>16</td>
+						<td class="fechaDia" data-dia='17'>17</td>
+						<td class="fechaDia" data-dia='18'>18</td>
+						<td class="fechaDia" data-dia='19'>19</td>
+						<td class="fechaDia" data-dia='20'>20</td>
+					</tr>
+					<tr>
+						<td class="fechaDia" data-dia='21'>21</td>
+						<td class="fechaDia" data-dia='22'>22</td>
+						<td class="fechaDia" data-dia='23'>23</td>
+						<td class="fechaDia" data-dia='24'>24</td>
+						<td class="fechaDia" data-dia='25'>25</td>
+						<td class="fechaDia" data-dia='26'>26</td>
+						<td class="fechaDia" data-dia='27'>27</td>
+					</tr>
+					<tr>
+						<td class="fechaDia" data-dia='28'>28</td>
+						<td class="fechaDia" data-dia='29'>29</td>
+						<td class="fechaDia" data-dia='30'>30</td>
+						<td class="fecha-evento" data-dia='31'>31</td>
+						<td class="fechaDia"></td>
+						<td class="fechaDia"></td>
+						<td class="fechaDia" ></td>
+					</tr>
+				</table>
+
+			</section>
+
+			<!-- fin seccion de calendario-->
+			<a class="waves-effect iniciarSesionEstilo btn" href="./assets/views/iniciarSesion.html">iniciar sesion</a>
+		</div>
+		<script src="../assets/js/jquery.min.js" charset="utf-8"></script>
+		<script src="../assets/js/materialize.min.js" charset="utf-8"></script>
+		<script src="../assets/src/dist/sweetalert.min.js" charset="utf-8"></script>
+		<script src="assets/js/api.js"></script>
+		<script type="text/javascript">
+			$("#nombreUsuario").html(localStorage.displayName);
+		</script>
+	</body>
 </html>

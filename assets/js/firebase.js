@@ -29,8 +29,8 @@ var logGoogle = function (){
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
-  // localStorage.setItem("email",user.email);
-  // localStorage.setItem("displayName",user.displayName);
+  localStorage.setItem("email",user.email);
+  localStorage.setItem("displayName",user.displayName);
   // if(location.origin == "https://localhost:5000")
   console.log(document.referrer);
   reubicar();
