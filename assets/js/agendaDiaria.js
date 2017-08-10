@@ -9,3 +9,7 @@ function cargarPag() {
 
 var sigIn = document.getElementById('btn-InicioSesion');
 sigIn.addEventListener('click', cargarPag);
+
+$(document).ready(function(){
+    $('.modal').modal();
+});
