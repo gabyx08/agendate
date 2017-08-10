@@ -103,6 +103,7 @@ var nuevasTarjetas = function(){
   var tarjetaFinal = "";
   tarjetaFinal += plantillaTarjeta.replace('__tituloEvento__',$(this).data('titulo'));
   $('#eventosDiarios').append(tarjetaFinal);
+  local
 };
 
 
