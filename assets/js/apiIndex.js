@@ -1,6 +1,6 @@
 
 var peticionApi = function(){
-    fetch("../assets/api/eventos.json").then(function(respuesta){
+    fetch("/agendate/assets/api/eventos.json").then(function(respuesta){
       return respuesta.json();
   }).then(function(datos){
       //console.log(datos.Sheet1);
@@ -33,7 +33,7 @@ var mostrarAgendaDia = function(e){
     console.log(this.dataset.dia);
     localStorage.setItem('diaSeleccionado',this.dataset.dia);
     console.log(localStorage.diaSeleccionado);
-    location.href="/agendate/assets/views/agendaDiaria.html";
+    location.href="/assets/views/agendaDiaria.html";
     //  location.href="../assets/views/agendaDiaria.html";
 
 }
