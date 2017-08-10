@@ -28,7 +28,7 @@ var peticionApi = function(){
 
 }
 var mostrarAgendaDia = function(){
-    location.href="../views/agendaDiaria.html";
+    location.href="agendate/assets/views/agendaDiaria.html";
 
 }
 var agregarData = function (arreglo){
