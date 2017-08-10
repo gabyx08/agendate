@@ -6,12 +6,13 @@
 		<link rel="stylesheet" href="../css/materialize.min.css">
 		<link rel="stylesheet" href="../css/calendarioUsuario.css">
 		<link rel="stylesheet" href="../css/main.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<header class="row">
 			<div class="center color p-3 " >
-				<img alt="logo" class=" logo col s4 offset-s4 col m2 offset-m5" src="../src/img/agenDate1.svg">
+				<img alt="logo" class="logo col s4 offset-s4 col m2 offset-m5" src="../src/img/agenDate1.svg">
 			</div>
 		</header>
 		<div class="container">
@@ -26,13 +27,13 @@
 
 				<table class="row center">
 					<tr class="row">
-						<th class="diaSemana">Lunes</th>
-						<th class="diaSemana">Martes</th>
-						<th class="diaSemana">Miercoles</th>
-						<th class="diaSemana">Jueves</th>
-						<th class="diaSemana">Viernes</th>
-						<th class="diaSemana">Sábado</th>
-						<th class="diaSemana">Domingo</th>
+						<th class="diaSemana">Mo</th>
+						<th class="diaSemana">Tu</th>
+						<th class="diaSemana">We</th>
+						<th class="diaSemana">Th</th>
+						<th class="diaSemana">Fr</th>
+						<th class="diaSemana">Sa</th>
+						<th class="diaSemana">Su</th>
 					</tr>
 					<tr>
 						<td></td>
@@ -46,7 +47,7 @@
 					<tr>
 						<td class="fechaDia" data-dia='7'>7</td>
 						<td class="fechaDia" data-dia='8'>8</td>
-						<td class="fecha-activa fechaDia" data-dia='9'>9</td>
+						<td class="fechaDia" data-dia='9'>9</td>
 						<td class="fechaDia" data-dia='10'>10</td>
 						<td class="fechaDia" data-dia='11'>11</td>
 						<td class="fechaDia" data-dia="12">12</td>
@@ -58,7 +59,7 @@
 						<td class="fechaDia" data-dia='16'>16</td>
 						<td class="fechaDia" data-dia='17'>17</td>
 						<td class="fechaDia" data-dia='18'>18</td>
-						<td class="fechaDia" data-dia='19'>19</td>
+						<td class="fecha-activa fechaDia" data-dia='19'>19</td>
 						<td class="fechaDia" data-dia='20'>20</td>
 					</tr>
 					<tr>
@@ -80,13 +81,23 @@
 						<td class="fechaDia" ></td>
 					</tr>
 				</table>
-
+				<hr>
+				<section class="row">
+					<div class="col s12 l12">
+						<div class="row">
+							<i  class=" col s2 l2 material-icons center-align fecha-evento">event</i>
+							<p class="col s3 l2 m-0 left-alig">Evento</p>
+							<i  class=" col s2 l2 material-icons center-align fecha-activa p-3">event_available</i>
+							<p class="col s5 l2 m-0 left-alig">Evento Agendado</p>
+						</div>
+					</div>
+				</section>
 			</section>
-			<div class="logoInicioSesion row">
-				<a class="waves-effect waves-light btn col s4 m4 l4 fondo-Az-med iniciarSesionEstilo" href="agendaUsuario.html">Mi Agenda</a>
-
-			</div>
 		</div>
+		<div class="container">
+			<a class=" row waves-effect waves-light btn  fondo-Az-med iniciarSesionEstilo" href="agendaUsuario.html">Mi Agenda</a>
+		</div>
+		
 		<script src="../js/jquery.min.js"></script>
 		<script src="../js/materialize.min.js"></script>
 		<script src="../js/api.js"></script>

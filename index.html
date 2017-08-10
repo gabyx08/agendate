@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="./assets/src/dist/sweetalert.css">
 		<link rel="stylesheet" href="./assets/css/main.css">
 		<link rel="stylesheet" href="assets/css/calendarioUsuario.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<title>Agendate</title>
 	</head>
 	<body>
@@ -20,24 +21,24 @@
 			<!--Navegacion  -->
 			<div class="row center navlogo">
 				<div class="col s4 offset-s4">
-					<img src="assets/src/img/agenDate1.svg" alt="" class="responsive-img brand-logo center">
+					<img src="assets/src/img/agenDate1.svg" alt="" class="z-depth-3 responsive-img brand-logo center">
 				</div>
 			</div>
 			<!-- Fin de Navegacion -->
 			<!--Inicio de seccion de  calendario-->
 			<section class="row">
 
-				<h5 class="center titulo-calendario p-3">Agosto </h5>
+				<h5 class=" center titulo-calendario p-3">Agosto </h5>
 
-				<table class="row center">
+				<table class="row">
 					<tr class="row">
-						<th class="diaSemana">Lunes</th>
-						<th class="diaSemana">Martes</th>
-						<th class="diaSemana">Miercoles</th>
-						<th class="diaSemana">Jueves</th>
-						<th class="diaSemana">Viernes</th>
-						<th class="diaSemana">Sábado</th>
-						<th class="diaSemana">Domingo</th>
+						<th class="diaSemana">Mo</th>
+						<th class="diaSemana">Tu</th>
+						<th class="diaSemana">We</th>
+						<th class="diaSemana">Th</th>
+						<th class="diaSemana">Fr</th>
+						<th class="diaSemana">Sa</th>
+						<th class="diaSemana">Su</th>
 					</tr>
 					<tr>
 						<td></td>
@@ -75,7 +76,7 @@
 						<td class="fechaDia" data-dia='26'>26</td>
 						<td class="fechaDia" data-dia='27'>27</td>
 					</tr>
-					<tr>
+					<tr class="border-b">
 						<td class="fechaDia" data-dia='28'>28</td>
 						<td class="fechaDia" data-dia='29'>29</td>
 						<td class="fechaDia" data-dia='30'>30</td>
@@ -85,11 +86,21 @@
 						<td class="fechaDia" ></td>
 					</tr>
 				</table>
-
+				<hr>
 			</section>
+			<section class="row">
+				<div class="col s12 l12">
+					<div class="row">
+						<i  class=" col s2 l2 material-icons center-align fecha-evento">event</i>
+						<p class="col s3 l2 m-0 left-alig">Evento</p>
+					</div>
+				</div>
+			</section>
+		</div>
 
-			<!-- fin seccion de calendario-->
-			<a class="waves-effect iniciarSesionEstilo btn" href="./assets/views/iniciarSesion.html">iniciar sesion</a>
+		<!-- fin seccion de calendario-->
+		<div class="container">
+		<a class="row waves-effect m-0 waves-light btn col s4 m4 l4 fondo-Az-med iniciarSesionEstilo" href="./assets/views/iniciarSesion.html">iniciar sesion</a>
 		</div>
 		<script src="./assets/js/jquery.min.js" charset="utf-8"></script>
 		<script src="./assets/js/materialize.min.js" charset="utf-8"></script>
