@@ -1,3 +1,6 @@
+.fondo-Az-osc {
+  background-color: #006064; }
+
 .fondo-Az-med {
   background-color: #00acc1; }
 
@@ -16,8 +19,14 @@
 .pb-9 {
   padding-bottom: 9%; }
 
+.mt-015 {
+  margin-top: -15%; }
+
 .mt-5 {
   margin-top: 5%; }
+
+.izq-3 {
+  left: 3%; }
 
 .alinear-v {
   display: flex;
@@ -29,6 +38,9 @@
 
 .ocultar {
   display: none; }
+
+.justificar {
+  text-align: justify; }
 
 .navlogo {
   padding-top: 0.5em; }
@@ -78,4 +90,5 @@
 
 .letra--grisMedio {
   color: #95989a; }
+
 /*# sourceMappingURL=main.css.map */

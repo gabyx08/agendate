@@ -1,4 +1,7 @@
 // Fondos
+.fondo-Az-osc{
+	background-color: $Azul-fuerte;
+}
 .fondo-Az-med{
 	background-color: $Azul-medio;
 }
@@ -25,8 +28,16 @@
 	padding-bottom: 9%;
 }
 
+.mt-015{
+	margin-top: -15%;
+}
+
 .mt-5{
 	margin-top: 5%;
+}
+
+.izq-3{
+	left: 3%;
 }
 
 // Alineación vertical
@@ -46,4 +57,8 @@
 
 .ocultar{
 	display: none;
+}
+
+.justificar{
+	text-align: justify;
 }
