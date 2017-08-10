@@ -1,5 +1,23 @@
 console.log('Agenda');
-// Funcionalidad modal
+//********FUNCÍÓN PARA FILTRAR EL DÍA*****
+var day = 19;
+
+function filtrarDia(dia) {
+	arregloDatos.forEach(function (evento) {
+		// console.log(evento.dia);
+		var coincidencia = []
+		if(evento.dia == day){
+			coincidencia.push(evento);
+			console.log(coincidencia);
+			mostrarEventos(coincidencia);
+			// return coincidencia;
+		}else{
+			console.log('ÑO');
+			// $('#eventos-Diarios').html('<h3 class="center"> Lo sentimos, aún no hay eventos programados :( </h3>');
+		}
+	});
+}
+// *******Funcionalidad modal************
 function cargarPag() {
 	setTimeout(function() {
 	  var url = "../views/iniciarSesion.html";
@@ -10,7 +28,7 @@ function cargarPag() {
 var sigIn = document.getElementById('btn-InicioSesion');
 sigIn.addEventListener('click', cargarPag);
 
-// Funcionalidad alert
+// ************Funcionalidad alert************
 function mostrarAlert() {
 	swal({
 	  title: "¿Estás segur@ de eliminar este evento?",
@@ -46,6 +64,7 @@ function validarEdo() {
 	}
 }
 
+//*******************Función Agendar Evento***************
 function agendarEv() {
 	// console.log(agregarEv.textContent);
 	$('#btn-agregar').text('check');
@@ -53,7 +72,7 @@ function agendarEv() {
 	actualizarTipo(tipo);
 }
 
-//Función API
+//************Función API************************
 var arregloDatos = [];
 function api() {
 	fetch("../api/eventos.json").then(function(respuesta){
@@ -69,11 +88,13 @@ function api() {
 	              }
 	          }
 	        //   console.log(arregloDatos);
-	          console.log(arregloDatos[0].nombre);
-			 mostrarEventos(arregloDatos);
+	        //   console.log(arregloDatos[0].nombre);
+			//  mostrarEventos(arregloDatos);
+			filtrarDia();
 	      });
 }
-// Función para mostrar tarjetas de los eventos
+
+// ***********Función para mostrar tarjetas de los eventos*******************
 var plantillaModal = '<div class="modal-content">'+
 	'<div class="row fondo--azulMedio">'+
 		'<div class="col s1">'+
@@ -106,7 +127,8 @@ var plantillaTarjeta = '<section class="card-panel grey lighten-4">'+
 				'</div>'+
 			'</div>'+
 		'</section>';
-// 00:00<br> a <br>00:00
+
+//************Función para mostrar eventos********************
 function mostrarEventos(evnt) {
 	var tarjetaEvn = "";
 	// var contenedorTarjetas = document.getElementById('eventos-Diarios');
@@ -116,17 +138,19 @@ function mostrarEventos(evnt) {
 		.replace('__tag__',evnt.etiqueta)
 		.replace('__horario__', evnt.horario)
 		.replace('__id__', evnt.evento);
+		$('#titulo-mes').text(evnt.mes);
+		$('#titulo-dia').text('Día: ' + evnt.dia);
 	});
 	$('#eventos-Diarios').html(tarjetaEvn);
 
 }
-
+//******************Función par aobtener id del evento************
 var obtenerId = function(){
 	var id = this.dataset.id;
 	// console.log(id);
 	filtrarInfoModal(id);
 }
-
+//*****************FUnción para filtrar evento *********************
 eventoFiltrado = [];
 var filtrarInfoModal = function(id){
 		eventoFiltrado = arregloDatos.filter(function (evento) {
@@ -136,6 +160,7 @@ var filtrarInfoModal = function(id){
 	 mostrarModal(eventoFiltrado);
 }
 
+//**********************Función par actualizarel tipo de evento*********************
 function actualizarTipo(tipo) {
 		var plantilla = "";
 		eventoFiltrado.forEach(function (filtro) {
@@ -143,10 +168,10 @@ function actualizarTipo(tipo) {
 		})
 }
 
+///*************Función que muestra el modal****************
 function mostrarModal(filtro) {
 	var verModal = "";
 	var tipo = 'add';
-	// var contenedorModal = document.getElementById('modal-Evento');
 	filtro.forEach(function (filtro) {
 		verModal = plantillaModal.replace('__titulo__', filtro.nombre)
 		.replace('__num-evento__', filtro.evento)
@@ -160,13 +185,13 @@ function mostrarModal(filtro) {
 	$('#modal-Evento').html(verModal);
 }
 
-// Función principal
+// **************Función principal*******************
 function cargarFns() {
 	api();
-	$(document).on('click', '.mas', obtenerId)
+	$(document).on('click', '.mas', obtenerId);
 	$('.modal').modal();
 	$(document).on('click', "#btn-agregar", validarEdo);//Funcion del modal
 }
 
-// Función al cargar página
+// *******Función que se ejecuta al cargar página**********
 $(document).ready(cargarFns);
