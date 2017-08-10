@@ -1,6 +1,6 @@
 console.log('Agenda');
 //********FUNCÍÓN PARA FILTRAR EL DÍA*****
-var day = 19;
+var day = localStorage.diaSeleccionado;
 
 function filtrarDia(dia) {
 	arregloDatos.forEach(function (evento) {
@@ -57,11 +57,22 @@ function validarEdo() {
 	console.log(edo);
 	if (edo == 'add') {
 		agendarEv();
-		swal("¡Super!", "El evento ha sido agregado a tu agenda", "success")
+		agendados();
+		swal("¡Super!", "El evento ha sido agregado a tu agenda", "success");
 	}
 	else{
 		mostrarAlert();
 	}
+}
+
+////*******************Arreglo de eventos agendados***********
+ var arregloAgendados = [];
+function agendados(e) {
+	var id = $(e.target).data(‘id’);
+	arregloAgendados.push(id);
+	localStorage[‘arregloAgendados’]=JSON.stringify(arregloAgendados);
+	console.log(arregloAgendados);
+	console.log(localStorage[‘arregloAgendados’]=JSON.stringify(arregloAgendados))
 }
 
 //*******************Función Agendar Evento***************
