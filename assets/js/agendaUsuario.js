@@ -1,9 +1,9 @@
 var arregloDatos = [];
 
-var arregloAgendados = ["evento1", "evento2", "evento3", "evento5"];
+var arregloAgendados = ["evento1","evento5"];
 
-var plantillaCard= `<h5>_dia_</h5>
-		<section class="card-panel grey lighten-4">
+var plantillaCard= `<section id="_id_"><h5>_dia_</h5>
+		<div class="card-panel grey lighten-4">
 			<div class="row">
 				<div class="col s8">
 					<h5> Titulo_Evento </h5>
@@ -20,12 +20,13 @@ var plantillaCard= `<h5>_dia_</h5>
 					<h4 class="center"> _horario_ </h4>
 				</div>
 			</div>
+			</div>
 		</section>`;
 
 var modal =  `<div class="modal-content">
              <i class="material-icons modal-close ">close</i>
           <h4 class="center p-3 fondo--azulMedio letra--blanca">Titulo_Evento</h4>
-          <a class="right btn-floating btn-large waves-effect waves-light fondo--azulMedio"><i id="btn-agregar" class="material-icons">check</i></a>
+          <a class="right btn-floating btn-large waves-effect waves-light fondo--azulMedio"><i id="btn-agregar" data-id="_evento_" data_ class="material-icons">check</i></a>
           <h5>Día _dia_</h5>
           <h6> _horario_</h6>
           <h6>Lugar: _lugar_</h6>
@@ -72,6 +73,7 @@ var mostrarEventos= function (eventos) {
 	var plantillaFinal = "";
 	eventos.forEach(function (evento) {
 		plantillaFinal += plantillaCard
+		.replace("_id_", evento[0].evento)
 		.replace("_evento_", evento[0].evento)
 		.replace("_dia_", evento[0].dia)
 		.replace("Titulo_Evento", evento[0].nombre)
@@ -112,9 +114,8 @@ var mostrarModal = function(eventoFiltrado){
 	$("#infoEvento").html(modalFinal);
 }
 
-
-
 function mostrarAlert() {
+	var idEvento= this.dataset.id;
 	swal({
 	  title: "¿Estás segur@ de eliminar este evento?",
 	  text: "Puedes volver a agregar el evento en otro momento ;)",
@@ -129,6 +130,8 @@ function mostrarAlert() {
 	  if (isConfirm) {
 	    swal("¡Eliminado!", "Este evento ha sido quitado de tu agenda.", "success");
 		$('#infoEvento').modal('close');
+		$("#"+idEvento).addClass("ocultar")
+
 
 	  } else {
 	    swal("Cancelado", "Podrás encontrar este evento en tu agenda :)", "error");
