@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Calendario Usuario</title>
-	<link rel="stylesheet" href="../css/materialize.min.css">
-	<link rel="stylesheet" href="../css/calendarioUsuario.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<header>
-		<div class="row">
-			<img alt="logo" class="center col l2 s2 offset-s5 offset-l5" src="https://dummyimage.com/100x100" alt="">	
-		</div>
-	</header>
-	
-	<section class="container">
-		<h3 class="titulo-usuario row">Bienvenido <samp id="nombreUsuario"></samp> </h3>
-	</section>
-	
-	<section class="container">
-		<div class="row">
-			<h5 class="center titulo-calendario">Agosto </h5>
-		</div>
-		
-	</section>
+	<head>
+		<meta charset="UTF-8">
+		<title>Calendario Usuario</title>
+		<link rel="stylesheet" href="../css/materialize.min.css">
+		<link rel="stylesheet" href="../css/calendarioUsuario.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header class="row">
+			<div class="center color p-3 col s12 m12 l12" >
+				<img alt="logo" class=" logo" src="https://dummyimage.com/100x100" alt="">	
+			</div>
+		</header>
+		<div class="container">
 
-	<script src="../js/jquery.min.js"></script>
-    <script src="../js/materialize.min.js"></script>	
-</body>
+			<section class="row">
+				<h4 class="titulo-usuario">Bienvenido <samp id="nombreUsuario"></samp> </h4>
+			</section>
+
+			<section class="row">
+
+				<h5 class="center titulo-calendario p-3">Agosto </h5>
+
+				<table class="row center">
+					<tr class="row">
+						<th>Lunes</th>
+						<th>Martes</th>
+						<th>Miercoles</th>
+						<th>Jueves</th>
+						<th>Viernes</th>
+						<th>Sábado</th>
+						<th>Domingo</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td class="fecha-activa">9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+					</tr>
+					<tr>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td class="fecha-evento">31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+
+			</section>
+			<div class="logoInicioSesion row">
+				<a class="waves-effect waves-light btn col s4 m4 l4 fondo-Az-med iniciarSesionEstilo" href="agendaUsuario.html">Mi Agenda</a>
+
+			</div>
+		</div>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/materialize.min.js"></script>	
+	</body>
 </html>

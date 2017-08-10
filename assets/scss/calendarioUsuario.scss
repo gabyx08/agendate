@@ -1,7 +1,13 @@
 @import'variables';
 
-header{
+.color{
 	background-color: $Azul-medio;
+}
+.logo{
+	
+	justify-content: center;
+	flex-direction: column;
+	align-items:center;
 }
 
 .titulo-usuario{
@@ -11,4 +17,22 @@ header{
 .titulo-calendario{
 	background-color: $Azul-medio;
 	color: white;
+}
+th{
+	text-align: center;
+	font-size: 1.8vw;
+	
+}
+td{
+	text-align: right;
+	color:$Gris-medio;
+}
+.fecha-evento{
+	background-color:$Gris-medio;
+	color: $Gris-fuerte;
+}
+.fecha-activa{
+	background-color:$Azul-fuerte;
+	color: $blanco;
+	font-weight: bold;
 }
