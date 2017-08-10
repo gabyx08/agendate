@@ -20,7 +20,7 @@ var peticionApi = function(){
 
           }
       }
-    //console.log(arregloDatos);
+    console.log(arregloDatos);
     //console.log(arregloDatos[0].nombre)
     //console.log(typeof arregloDatos);
     agregarData(arregloDatos);
