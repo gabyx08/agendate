@@ -17,7 +17,7 @@
 		<button id="btn-InicioSesion" class="waves-effect waves-light btn offset-s3 col s4 fondo-Az-med iniciarSesionEstilo">Iniciar Sesión</button>
 	</header>
 	<!-- Modal Info Evento -->
-      <div id="infoEvento" class="modal">
+      <div id="modal-Evento" class="modal">
         <div class="modal-content">
     			<div class="row fondo--azulMedio">
     				<div class="col s1">
@@ -37,28 +37,31 @@
 		<h3 class="white-text p-3 center"> MES </h3>
 	</section>
 	<!-- Tarjetas eventos -->
-	<section class="eventos-Diarios container" id="eventosDiarios">
+	<section id="eventos-Diarios" class="container">
 		<h4 class="row"> <strong>Día 0</strong></h4>
-		<!-- <! Tarjeta evento -->
-		<section class="card-panel grey lighten-4">
-			<div class="row">
-				<div class="col s8">
-					<h5> Titulo Evento </h5>
-					<p> Nombre Ponente</p>
-					<div class="container">
-						<div class="row">
-							<span class="center tag col s5 chip"> Lugar </span>
-							<a href="#infoEvento" class="center offset-s1 col s5"> ver más</a>
+		<!-- Sección de tarjetas -->
+		<sectio class="tarjetas">
+			<!-- Tarjeta evento -->
+			<section class="card-panel grey lighten-4">
+				<div class="row">
+					<div class="col s8">
+						<h5 class="tituloEv"> Tarjeta Prueba</h5>
+						<p> Nombre Ponente</p>
+						<div class="container">
+							<div class="row">
+								<span class="center tag col s5 chip"> Lugar </span>
+								<a href="#infoEvento" class="center offset-s1 col s5"> ver más</a>
+							</div>
 						</div>
 					</div>
+					<div class="center col s4 grey lighten-2">
+						<p class="center chip fuente-Az-med ocultar"> Agendado</p>
+						<h4 class="center pb-9"> 00:00<br> a <br>00:00 </h4>
+					</div>
 				</div>
-				<div class="center col s4 grey lighten-2">
-					<p class="center chip fuente-Az-med ocultar"> Agendado</p>
-					<h4 class="center pb-9"> 00:00<br> a <br>00:00 </h4>
-				</div>
-			</div>
-		</section>
-		<!-- Fin tarjeta evento -->
+			</section>
+			<!-- Fin tarjeta evento -->
+		</sectio>
 	</section>
 	<!-- SCRIPTS-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
