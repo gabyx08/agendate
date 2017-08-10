@@ -44,6 +44,7 @@ var agregarData = function (arreglo){
            $(this).data('horario',arreglo[i].horario);
            $(this).data('lugar',arreglo[i].lugar);
            $(this).data('descripcion',arreglo[i].descripcion);
+           $(this).click(mostrarAgendaDia);
           //  $(this).click(mostrarAgendaDia);
          }
     });
