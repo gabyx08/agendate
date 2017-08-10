@@ -1,6 +1,6 @@
 
 var peticionApi = function(){
-    fetch("/agendate/assets/api/eventos.json").then(function(respuesta){
+    fetch("/assets/api/eventos.json").then(function(respuesta){
       return respuesta.json();
   }).then(function(datos){
       //console.log(datos.Sheet1);
@@ -27,15 +27,20 @@ var peticionApi = function(){
 });
 
 }
-var mostrarAgendaDia = function(){
+var mostrarAgendaDia = function(e){
 
+    console.log("hola");
+    console.log(this.dataset.dia);
+    localStorage.setItem('diaSeleccionado',this.dataset.dia);
+    console.log(localStorage.diaSeleccionado);
     location.href="/agendate/assets/views/agendaDiaria.html";
+    //  location.href="../assets/views/agendaDiaria.html";
 
 }
 
 var arregloObjetos=[{}];
 var agregarData = function (arreglo){
-
+  var arregloNombres= [];
   for(var i = 0 ; i < arreglo.length ;i++){
     // console.log(arreglo[i]);
     $(".fechaDia").each(function(indice,elemento){
@@ -45,16 +50,18 @@ var agregarData = function (arreglo){
            $(this).addClass('fecha-evento');
            $(this).data('evento',arreglo[i].evento);
           //  console.log($(this).data('evento'));
+          $(this).data('nombre',arreglo[i].nombre);
+          $(this).data('ponente',arreglo[i].ponente);
+          $(this).data('horario',arreglo[i].horario);
+          $(this).data('lugar',arreglo[i].lugar);
+          $(this).data('dia',arreglo[i].dia);
+          $(this).data('descripcion',arreglo[i].descripcion);
           $(this).click(mostrarAgendaDia);
           //  $(this).click(mostrarAgendaDia);
          }
     });
   }
-  // //console.log(arregloDatos);
-  // var jaja = arregloDatos.forEach(function(dato,indice){
-  //   return(dato[indice].dia);
-  // });
-  // //console.log(jaja);
+
 }
 
 var arregloDatos = [];
