@@ -9,7 +9,7 @@ var config = {
 };
 firebase.initializeApp(config);
 var reubicar = function (){
-  if(document.referrer == "https://memecast.github.io/"){
+  if(document.referrer == "https://memecast.github.io/agendate/"){
     location.href = "https://memecast.github.io/agendate/assets/views/agendaUsuario.html";
   }else if( document.referrer == "https://memecast.github.io/agendate/assets/views/agendaDiaria.html"){
     location.href = document.referrer;
