@@ -1,6 +1,6 @@
 
 var peticionApi = function(){
-    fetch("/assets/api/eventos.json").then(function(respuesta){
+    fetch("agendate/assets/api/eventos.json").then(function(respuesta){
       return respuesta.json();
   }).then(function(datos){
       //console.log(datos.Sheet1);
