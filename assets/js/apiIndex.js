@@ -33,12 +33,12 @@ var mostrarAgendaDia = function(){
 
 }
 var Evento = function (titulo,ponente,horario,lugar,descripcion){
-  this.titulo : titulo,
-  this.ponente: ponente,
-  this.horario: horario,
-  this.lugar:   lugar,
-  this.descripcion: descripcion,
-  this.agregado: 'false';
+  this.titulo = titulo,
+  this.ponente= ponente,
+  this.horario= horario,
+  this.lugar=   lugar,
+  this.descripcion= descripcion,
+  this.agregado= 'false';
 }
 var arregloObjetos=[{}];
 var agregarData = function (arreglo){
