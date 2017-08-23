@@ -1,6 +1,6 @@
 var arregloDatos = [];
 
-var arregloAgendados = ["evento2"];
+var arregloAgendados = ["evento2","evento4","evento5"];
 
 var plantillaCard= `<section id="_id_"><h5> Día _dia_</h5>
 		<div class="card-panel grey lighten-4">
@@ -132,7 +132,9 @@ function mostrarAlert() {
 	  if (isConfirm) {
 	    swal("¡Eliminado!", "Este evento ha sido quitado de tu agenda.", "success");
 		$('#infoEvento').modal('close');
-		$("#"+idEvento).addClass("ocultar")
+		//$("#"+idEvento).addClass("ocultar")
+		eliminarEventoAgendado(idEvento)
+
 
 
 	  } else {
@@ -141,9 +143,21 @@ function mostrarAlert() {
 	});
 }
 
+var eliminarEventoAgendado= function(idEvento){
+	if (arregloAgendados.indexOf(idEvento) >= 0){
+		var eliminar = arregloAgendados.indexOf(idEvento);
+		console.log(eliminar)
+		arregloAgendados =arregloAgendados.splice(eliminar-1,eliminar);
+		filtrarEventosAgendados(arregloAgendados)
+	}
+
+}
+
 $(document).ready(function(){
     $(document).on("click", ".mas", obtenerId);
     $('.modal').modal();
     infoEventos();
     $(document).on("click", "#btn-agregar", mostrarAlert);
   });
+
+
